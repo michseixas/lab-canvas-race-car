@@ -33,12 +33,20 @@ body button {
 }
 
 #game-board {
-    float: left;
-    padding: 20px 0px;
+  float: left;
+  padding: 20px 0px;
 }
 
 canvas {
-  /*this gives a border to the canvas*/
   border: 1px solid ; 
+  position: absolute;
+}
+
+#canvas { /* Main reloadable Canvas*/
+  z-index: 1; 
+} 
+
+#canvasBackground {/* Background Canvas*/
+  z-index: 0;
 } 
 
